@@ -1,6 +1,11 @@
-# Welcome to the Brainrex Docs
+# Getting Started with the Brainrex API
+Welcome to Brainrex! Get familiar with the Brainrex products and explore their features:
+
+
 
 Welcome to the Brainrex API explorer, we make analytics tools for crypto and blockchain. Our currently propiertary models offer sentiment analysis, market making, blockchain monitoring and face-id verification. This AI models can be consumed from this API. We also offer integrations to open data and propietary data providers, as well as free test data we collect. There is a collection of data transformation tools. Join our Telegram group to get the latest news and ask questions [https://t.me/brainrex, #brainrex](https://t.me/brainrex). More about Brainrex at [https://brainrex.com](http://brainrex.com). Full Documentation can be found at [https://brainrexapi.github.io/docs](https://brainrexapi.github.io/docs)
+
+
 
 
 ## Client libraries available in the following programming lanaguges.
@@ -21,8 +26,7 @@ Welcome to the Brainrex API explorer, we make analytics tools for crypto and blo
 
 
 ## Available endpoints
-
-## Documentation for API Endpoints
+## Full Documentation for API Endpoints
 
 All URIs are relative to *https://brainrexapi.appspot.com:5000/api*
 
@@ -37,13 +41,3 @@ Class | Method | HTTP request | Description
 *CryptoApi* | [**exchangesTickerDataDownload**]| **POST** /download_ticker | Download raw ticker data from major crypto markets
 *SentimentAnalysisApi* | [**sentimentGetPriceSentiment**] | **POST** /get_buy_sentiment | Sentiment analysis score using a model trained for buy signals.
 *SentimentAnalysisApi* | [**sentimentGetSentiment**] | **POST** /get_sentiment | Sentiment analysis for any given blob of text
-
-
-
-:
-
-
-
-## Author
-
-support@brainrex.com

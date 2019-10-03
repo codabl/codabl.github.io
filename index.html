@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content=" Artificial Intelligence for your Blockchain or Crypto project. Build and deploy machine learning models from one place. Over 40 data integrations.">
-  <meta name="author" content="Brainrex Ltd">
+  <meta name="description" content=" Developer Documentation for the Brainrex API. Find tutorials, API Reference, quickstarts and more.">
+  <meta name="author" content="Gonzalo Astorga">
   <meta property="og:title" content="Brainrex Ltd" />
   <meta property="og:stie_name" content="Brainrex API" />
 
-  <meta property="og:description" content="Artificial Intelligence API blockchain crypto projects machine learning" />
+  <meta property="og:description" content="Developer Documentation for the Brainrex API. Find tutorials, API Reference, quickstarts and more  " />
   <meta property="og:type" content="website.startup" />
   <meta property="og:url" content="http://www.brainrex.com/" />
-  <meta property="og:image" content="https://s3-eu-west-1.amazonaws.com/brainrex.com/assets/img/brand/logo-circle-white.png" />
+  <meta property="og:image" content="https://s3-eu-west-1.amazonaws.com/brainrex.com/assets/img/brand/brainrex-lower.png" />
 
-  <title>Brainrex Docs</title>
+  <title>Developers - Brainex</title>
   <link href="https://s3-eu-west-1.amazonaws.com/brainrex.com/assets/img/brand/favicon.png" rel="icon" type="image/png">
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -21,12 +22,15 @@
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css"> -->
   <!-- <link rel="stylesheet" href="assets/theme-custom.css"> -->
-    <link rel="stylesheet" href="//unpkg.com/docsify/themes/vue.css" title="vue">
+  <link rel="stylesheet" href="//unpkg.com/docsify/themes/vue.css" title="vue">
+  <!-- Add custom css here -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 
   <!-- <link rel="stylesheet" href="//unpkg.com/docsify/themes/buble.css"> -->
 
   <!-- Quantcast Choice. Consent Manager Tag -->
-<script type="text/javascript" async=true>
+  <script type="text/javascript" async=true>
     var elem = document.createElement('script');
     elem.src = 'https://quantcast.mgr.consensu.org/cmp.js';
     elem.async = true;
@@ -34,93 +38,97 @@
     var scpt = document.getElementsByTagName('script')[0];
     scpt.parentNode.insertBefore(elem, scpt);
     (function() {
-    var gdprAppliesGlobally = true;
-    function addFrame() {
+      var gdprAppliesGlobally = true;
+
+      function addFrame() {
         if (!window.frames['__cmpLocator']) {
-        if (document.body) {
+          if (document.body) {
             var body = document.body,
-                iframe = document.createElement('iframe');
+              iframe = document.createElement('iframe');
             iframe.style = 'display:none';
             iframe.name = '__cmpLocator';
             body.appendChild(iframe);
-        } else {
+          } else {
             // In the case where this stub is located in the head,
             // this allows us to inject the iframe more quickly than
             // relying on DOMContentLoaded or other events.
             setTimeout(addFrame, 5);
+          }
         }
-        }
-    }
-    addFrame();
-    function cmpMsgHandler(event) {
+      }
+      addFrame();
+
+      function cmpMsgHandler(event) {
         var msgIsString = typeof event.data === "string";
         var json;
-        if(msgIsString) {
-        json = event.data.indexOf("__cmpCall") != -1 ? JSON.parse(event.data) : {};
+        if (msgIsString) {
+          json = event.data.indexOf("__cmpCall") != -1 ? JSON.parse(event.data) : {};
         } else {
-        json = event.data;
+          json = event.data;
         }
         if (json.__cmpCall) {
-        var i = json.__cmpCall;
-        window.__cmp(i.command, i.parameter, function(retValue, success) {
-            var returnMsg = {"__cmpReturn": {
-            "returnValue": retValue,
-            "success": success,
-            "callId": i.callId
-            }};
+          var i = json.__cmpCall;
+          window.__cmp(i.command, i.parameter, function(retValue, success) {
+            var returnMsg = {
+              "__cmpReturn": {
+                "returnValue": retValue,
+                "success": success,
+                "callId": i.callId
+              }
+            };
             event.source.postMessage(msgIsString ?
-            JSON.stringify(returnMsg) : returnMsg, '*');
-        });
+              JSON.stringify(returnMsg) : returnMsg, '*');
+          });
         }
-    }
-    window.__cmp = function (c) {
+      }
+      window.__cmp = function(c) {
         var b = arguments;
         if (!b.length) {
-        return __cmp.a;
-        }
-        else if (b[0] === 'ping') {
-        b[2]({"gdprAppliesGlobally": gdprAppliesGlobally,
-            "cmpLoaded": false}, true);
+          return __cmp.a;
+        } else if (b[0] === 'ping') {
+          b[2]({
+            "gdprAppliesGlobally": gdprAppliesGlobally,
+            "cmpLoaded": false
+          }, true);
         } else if (c == '__cmp')
-        return false;
+          return false;
         else {
-        if (typeof __cmp.a === 'undefined') {
+          if (typeof __cmp.a === 'undefined') {
             __cmp.a = [];
+          }
+          __cmp.a.push([].slice.apply(b));
         }
-        __cmp.a.push([].slice.apply(b));
-        }
-    }
-    window.__cmp.gdprAppliesGlobally = gdprAppliesGlobally;
-    window.__cmp.msgHandler = cmpMsgHandler;
-    if (window.addEventListener) {
+      }
+      window.__cmp.gdprAppliesGlobally = gdprAppliesGlobally;
+      window.__cmp.msgHandler = cmpMsgHandler;
+      if (window.addEventListener) {
         window.addEventListener('message', cmpMsgHandler, false);
-    }
-    else {
+      } else {
         window.attachEvent('onmessage', cmpMsgHandler);
-    }
+      }
     })();
     window.__cmp('init', {
-        'Language': 'en',
-    'Initial Screen Reject Button Text': 'I do not accept',
-    'Initial Screen Accept Button Text': 'I accept',
-    'Purpose Screen Body Text': 'You can set your consent preferences and determine how you want your data to be used based on the purposes below. You may set your preferences for us independently from those of third-party partners. Each purpose has a description so that you know how we and partners use your data.',
-    'Vendor Screen Body Text': 'You can set consent preferences for each individual third-party company below. Expand each company list item to see what purposes they use data for to help make your choices. In some cases, companies may disclose that they use your data without asking for your consent, based on their legitimate interests. You can click on their privacy policies for more information and to opt out.',
-    'Vendor Screen Accept All Button Text': 'Accept all',
-    'Vendor Screen Reject All Button Text': 'Reject all',
-    'Initial Screen Body Text': 'We and our partners use technology such as cookies on our site to personalise content and ads, provide social media features, and analyse our traffic. Click below to consent to the use of this technology across the web. You can change your mind and change your consent choices at anytime by returning to this site.',
-    'Initial Screen Body Text Option': 1,
-    'Publisher Name': 'Brainrex, Ltd. ',
-    'Display UI': 'inEU',
-    'Publisher Logo': 'https://brainrex.com/assets/img/brand/logo-circle-white.png',
-    'Min Days Between UI Displays': 2,
-    'Publisher Purpose IDs': [1,2,4,5],
-    'Publisher Purpose Legitimate Interest IDs': [1,2,4,5],
-    'Consent Scope': 'service',
+      'Language': 'en',
+      'Initial Screen Reject Button Text': 'I do not accept',
+      'Initial Screen Accept Button Text': 'I accept',
+      'Purpose Screen Body Text': 'You can set your consent preferences and determine how you want your data to be used based on the purposes below. You may set your preferences for us independently from those of third-party partners. Each purpose has a description so that you know how we and partners use your data.',
+      'Vendor Screen Body Text': 'You can set consent preferences for each individual third-party company below. Expand each company list item to see what purposes they use data for to help make your choices. In some cases, companies may disclose that they use your data without asking for your consent, based on their legitimate interests. You can click on their privacy policies for more information and to opt out.',
+      'Vendor Screen Accept All Button Text': 'Accept all',
+      'Vendor Screen Reject All Button Text': 'Reject all',
+      'Initial Screen Body Text': 'We and our partners use technology such as cookies on our site to personalise content and ads, provide social media features, and analyse our traffic. Click below to consent to the use of this technology across the web. You can change your mind and change your consent choices at anytime by returning to this site.',
+      'Initial Screen Body Text Option': 1,
+      'Publisher Name': 'Brainrex, Ltd. ',
+      'Display UI': 'inEU',
+      'Publisher Logo': 'https://brainrex.com/assets/img/brand/logo-circle-white.png',
+      'Min Days Between UI Displays': 2,
+      'Publisher Purpose IDs': [1, 2, 4, 5],
+      'Publisher Purpose Legitimate Interest IDs': [1, 2, 4, 5],
+      'Consent Scope': 'service',
     });
-</script>
-<!-- End Quantcast Choice. Consent Manager Tag -->
-    <style>
-    </style>
+  </script>
+  <!-- End Quantcast Choice. Consent Manager Tag -->
+  <style>
+  </style>
 
   <!--Intercom Chat  -->
   <script>
@@ -163,22 +171,30 @@
   </script>
 
 </head>
+
 <body>
   <!-- <div id="app">Loading ...</div> -->
-  <nav>
-    <a href="#/">Getting started</a>
-<a href="#/python/">Python </a>
-<a href="#/bash/">Bash </a>
-<a href="#/go/">Go </a>
-<a href="#/haskell/">Haskell </a>
-<a href="#/java/">Java </a>
-<a href="#/javascript/">Javascript </a>
-<a href="#/perl/">Perl </a>
-<a href="#/r/">R </a>
-<a href="#/ruby/">Ruby </a>
-<a href="#/rust/">Python </a>
-    </nav>
+
+  <!-- Image and text -->
+<nav >
+
+  <a href="#/">Getting started</a>
+  <a href="#/python/">Python </a>
+  <a href="#/bash/">Bash </a>
+  <a href="#/go/">Go </a>
+  <a href="#/haskell/">Haskell </a>
+  <a href="#/java/">Java </a>
+  <a href="#/javascript/">Javascript </a>
+  <a href="#/perl/">Perl </a>
+  <a href="#/r/">R </a>
+  <a href="#/ruby/">Ruby </a>
+  <a href="#/rust/">Python </a>
+</nav>
+
   <div id="app"></div>
+
+
+  <script src="//unpkg.com/docsify/lib/plugins/ga.min.js"></script>
 
   <script>
     window.$docsify = {
@@ -186,14 +202,21 @@
       repo: 'https://github.com/brainrexAPI',
       logo: 'https://s3-eu-west-1.amazonaws.com/brainrex.com/assets/img/brand/logo-docs-green.png',
       loadSidebar: true,
-      subMaxLevel : 2 
+      subMaxLevel: 2,
+      ga: 'UA-136383172-1'
     }
   </script>
-  <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
+  <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+  <script src="//unpkg.com/docsify-copy-code"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/ga.min.js"></script>
   <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
   <script src="//unpkg.com/docsify/lib/plugins/zoom-image.min.js"></script>
 
 
 </body>
+
 </html>

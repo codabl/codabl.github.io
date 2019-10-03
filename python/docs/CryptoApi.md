@@ -1,18 +1,16 @@
 # swagger_client.CryptoApi
 
-All URIs are relative to *https://brainrexapi.appspot.com:5000/api*
+All URIs are relative to *https://brainrexapi.appspot.com/api*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**exchanges_download_candles**](CryptoApi.md#exchanges_download_candles) | **POST** /download_candles | Downloads candle format market data
-[**exchanges_list**](CryptoApi.md#exchanges_list) | **GET** /markets | The markets data structure supported by the Brainrex Market API
-[**exchanges_marketmaker**](CryptoApi.md#exchanges_marketmaker) | **POST** /market_making | Market Making as a Service API.
-[**exchanges_read**](CryptoApi.md#exchanges_read) | **GET** /exchanges | The exchanges data structure supported by the Brainrex API
-[**exchanges_ticker_data_download**](CryptoApi.md#exchanges_ticker_data_download) | **POST** /download_ticker | Download raw ticker data from major crypto markets
+[**crypto_download_candles**](CryptoApi.md#crypto_download_candles) | **POST** /download_candles | Downloads candle format market data
+[**crypto_list_exchanges**](CryptoApi.md#crypto_list_exchanges) | **GET** /exchanges | Available exchanges for the Brainrex Data
+[**crypto_list_markets**](CryptoApi.md#crypto_list_markets) | **GET** /markets | The markets data structure supported by the Brainrex Market API
+[**crypto_ticker_data_download**](CryptoApi.md#crypto_ticker_data_download) | **POST** /download_ticker | Download raw ticker data from major crypto markets
 
-
-# **exchanges_download_candles**
-> InlineResponse201 exchanges_download_candles(request)
+# **crypto_download_candles**
+> OHCLV crypto_download_candles(body)
 
 Downloads candle format market data
 
@@ -28,25 +26,25 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = swagger_client.CryptoApi()
-request = swagger_client.Request2() # Request2 | Person to create
+body = swagger_client.Body8() # Body8 | Person to create
 
 try:
     # Downloads candle format market data
-    api_response = api_instance.exchanges_download_candles(request)
+    api_response = api_instance.crypto_download_candles(body)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling CryptoApi->exchanges_download_candles: %s\n" % e)
+    print("Exception when calling CryptoApi->crypto_download_candles: %s\n" % e)
 ```
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**Request2**](Request2.md)| Person to create |
+ **body** | [**Body8**](Body8.md)| Person to create | 
 
 ### Return type
 
-[**InlineResponse201**](InlineResponse201.md)
+[**OHCLV**](OHCLV.md)
 
 ### Authorization
 
@@ -59,8 +57,52 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **exchanges_list**
-> list[object] exchanges_list()
+# **crypto_list_exchanges**
+> list[Object] crypto_list_exchanges()
+
+Available exchanges for the Brainrex Data
+
+Read the list of supported exchanges in the Market Data API
+
+### Example
+```python
+from __future__ import print_function
+import time
+import swagger_client
+from swagger_client.rest import ApiException
+from pprint import pprint
+
+# create an instance of the API class
+api_instance = swagger_client.CryptoApi()
+
+try:
+    # Available exchanges for the Brainrex Data
+    api_response = api_instance.crypto_list_exchanges()
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling CryptoApi->crypto_list_exchanges: %s\n" % e)
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+[**list[Object]**](Object.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **crypto_list_markets**
+> list[Object] crypto_list_markets()
 
 The markets data structure supported by the Brainrex Market API
 
@@ -79,10 +121,10 @@ api_instance = swagger_client.CryptoApi()
 
 try:
     # The markets data structure supported by the Brainrex Market API
-    api_response = api_instance.exchanges_list()
+    api_response = api_instance.crypto_list_markets()
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling CryptoApi->exchanges_list: %s\n" % e)
+    print("Exception when calling CryptoApi->crypto_list_markets: %s\n" % e)
 ```
 
 ### Parameters
@@ -90,7 +132,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-**list[object]**
+[**list[Object]**](Object.md)
 
 ### Authorization
 
@@ -98,105 +140,13 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **exchanges_marketmaker**
-> InlineResponse2011 exchanges_marketmaker(request)
-
-Market Making as a Service API.
-
-Our AI will trade at the risk level you want, you need to provide your credential to the exchange you are trading at.
-
-### Example
-```python
-from __future__ import print_function
-import time
-import swagger_client
-from swagger_client.rest import ApiException
-from pprint import pprint
-
-# create an instance of the API class
-api_instance = swagger_client.CryptoApi()
-request = swagger_client.Request3() # Request3 | Name of exchange and currency pair you want to provide liquidity
-
-try:
-    # Market Making as a Service API.
-    api_response = api_instance.exchanges_marketmaker(request)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling CryptoApi->exchanges_marketmaker: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **request** | [**Request3**](Request3.md)| Name of exchange and currency pair you want to provide liquidity |
-
-### Return type
-
-[**InlineResponse2011**](InlineResponse2011.md)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **exchanges_read**
-> list[object] exchanges_read()
-
-The exchanges data structure supported by the Brainrex API
-
-Read the list of supported exchanges in the Market Data API
-
-### Example
-```python
-from __future__ import print_function
-import time
-import swagger_client
-from swagger_client.rest import ApiException
-from pprint import pprint
-
-# create an instance of the API class
-api_instance = swagger_client.CryptoApi()
-
-try:
-    # The exchanges data structure supported by the Brainrex API
-    api_response = api_instance.exchanges_read()
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling CryptoApi->exchanges_read: %s\n" % e)
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-**list[object]**
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **exchanges_ticker_data_download**
-> InlineResponse201 exchanges_ticker_data_download(request)
+# **crypto_ticker_data_download**
+> OHCLV crypto_ticker_data_download(body)
 
 Download raw ticker data from major crypto markets
 
@@ -212,25 +162,25 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = swagger_client.CryptoApi()
-request = swagger_client.Request1() # Request1 | Person to create
+body = swagger_client.Body7() # Body7 | Person to create
 
 try:
     # Download raw ticker data from major crypto markets
-    api_response = api_instance.exchanges_ticker_data_download(request)
+    api_response = api_instance.crypto_ticker_data_download(body)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling CryptoApi->exchanges_ticker_data_download: %s\n" % e)
+    print("Exception when calling CryptoApi->crypto_ticker_data_download: %s\n" % e)
 ```
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**Request1**](Request1.md)| Person to create |
+ **body** | [**Body7**](Body7.md)| Person to create | 
 
 ### Return type
 
-[**InlineResponse201**](InlineResponse201.md)
+[**OHCLV**](OHCLV.md)
 
 ### Authorization
 
@@ -242,3 +192,4 @@ No authorization required
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+

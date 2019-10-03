@@ -1,19 +1,17 @@
 # CryptoApi
 
-All URIs are relative to *https://brainrexapi.appspot.com:5000/api*
+All URIs are relative to *https://brainrexapi.appspot.com/api*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**exchangesDownloadCandles**](CryptoApi.md#exchangesDownloadCandles) | **POST** /download_candles | Downloads candle format market data
-[**exchangesList**](CryptoApi.md#exchangesList) | **GET** /markets | The markets data structure supported by the Brainrex Market API
-[**exchangesMarketmaker**](CryptoApi.md#exchangesMarketmaker) | **POST** /market_making | Market Making as a Service API.
-[**exchangesRead**](CryptoApi.md#exchangesRead) | **GET** /exchanges | The exchanges data structure supported by the Brainrex API
-[**exchangesTickerDataDownload**](CryptoApi.md#exchangesTickerDataDownload) | **POST** /download_ticker | Download raw ticker data from major crypto markets
+[**cryptoDownloadCandles**](CryptoApi.md#cryptoDownloadCandles) | **POST** /download_candles | Downloads candle format market data
+[**cryptoListExchanges**](CryptoApi.md#cryptoListExchanges) | **GET** /exchanges | Available exchanges for the Brainrex Data
+[**cryptoListMarkets**](CryptoApi.md#cryptoListMarkets) | **GET** /markets | The markets data structure supported by the Brainrex Market API
+[**cryptoTickerDataDownload**](CryptoApi.md#cryptoTickerDataDownload) | **POST** /download_ticker | Download raw ticker data from major crypto markets
 
-
-<a name="exchangesDownloadCandles"></a>
-# **exchangesDownloadCandles**
-> InlineResponse201 exchangesDownloadCandles(request)
+<a name="cryptoDownloadCandles"></a>
+# **cryptoDownloadCandles**
+> OHCLV cryptoDownloadCandles(body)
 
 Downloads candle format market data
 
@@ -27,12 +25,12 @@ Returns a list of candle data from specified market and data range
 
 
 CryptoApi apiInstance = new CryptoApi();
-Request2 request = new Request2(); // Request2 | Person to create
+Body8 body = new Body8(); // Body8 | Person to create
 try {
-    InlineResponse201 result = apiInstance.exchangesDownloadCandles(request);
+    OHCLV result = apiInstance.cryptoDownloadCandles(body);
     System.out.println(result);
 } catch (ApiException e) {
-    System.err.println("Exception when calling CryptoApi#exchangesDownloadCandles");
+    System.err.println("Exception when calling CryptoApi#cryptoDownloadCandles");
     e.printStackTrace();
 }
 ```
@@ -41,11 +39,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**Request2**](Request2.md)| Person to create |
+ **body** | [**Body8**](Body8.md)| Person to create |
 
 ### Return type
 
-[**InlineResponse201**](InlineResponse201.md)
+[**OHCLV**](OHCLV.md)
 
 ### Authorization
 
@@ -56,9 +54,50 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="exchangesList"></a>
-# **exchangesList**
-> List&lt;Object&gt; exchangesList()
+<a name="cryptoListExchanges"></a>
+# **cryptoListExchanges**
+> List&lt;Object&gt; cryptoListExchanges()
+
+Available exchanges for the Brainrex Data
+
+Read the list of supported exchanges in the Market Data API
+
+### Example
+```java
+// Import classes:
+//import io.swagger.client.ApiException;
+//import io.swagger.client.api.CryptoApi;
+
+
+CryptoApi apiInstance = new CryptoApi();
+try {
+    List<Object> result = apiInstance.cryptoListExchanges();
+    System.out.println(result);
+} catch (ApiException e) {
+    System.err.println("Exception when calling CryptoApi#cryptoListExchanges");
+    e.printStackTrace();
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+**List&lt;Object&gt;**
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+<a name="cryptoListMarkets"></a>
+# **cryptoListMarkets**
+> List&lt;Object&gt; cryptoListMarkets()
 
 The markets data structure supported by the Brainrex Market API
 
@@ -73,10 +112,10 @@ Read the list of supported markets ( currency pairs ) in each exchange
 
 CryptoApi apiInstance = new CryptoApi();
 try {
-    List<Object> result = apiInstance.exchangesList();
+    List<Object> result = apiInstance.cryptoListMarkets();
     System.out.println(result);
 } catch (ApiException e) {
-    System.err.println("Exception when calling CryptoApi#exchangesList");
+    System.err.println("Exception when calling CryptoApi#cryptoListMarkets");
     e.printStackTrace();
 }
 ```
@@ -94,98 +133,12 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="exchangesMarketmaker"></a>
-# **exchangesMarketmaker**
-> InlineResponse2011 exchangesMarketmaker(request)
-
-Market Making as a Service API.
-
-Our AI will trade at the risk level you want, you need to provide your credential to the exchange you are trading at.
-
-### Example
-```java
-// Import classes:
-//import io.swagger.client.ApiException;
-//import io.swagger.client.api.CryptoApi;
-
-
-CryptoApi apiInstance = new CryptoApi();
-Request3 request = new Request3(); // Request3 | Name of exchange and currency pair you want to provide liquidity
-try {
-    InlineResponse2011 result = apiInstance.exchangesMarketmaker(request);
-    System.out.println(result);
-} catch (ApiException e) {
-    System.err.println("Exception when calling CryptoApi#exchangesMarketmaker");
-    e.printStackTrace();
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **request** | [**Request3**](Request3.md)| Name of exchange and currency pair you want to provide liquidity |
-
-### Return type
-
-[**InlineResponse2011**](InlineResponse2011.md)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-<a name="exchangesRead"></a>
-# **exchangesRead**
-> List&lt;Object&gt; exchangesRead()
-
-The exchanges data structure supported by the Brainrex API
-
-Read the list of supported exchanges in the Market Data API
-
-### Example
-```java
-// Import classes:
-//import io.swagger.client.ApiException;
-//import io.swagger.client.api.CryptoApi;
-
-
-CryptoApi apiInstance = new CryptoApi();
-try {
-    List<Object> result = apiInstance.exchangesRead();
-    System.out.println(result);
-} catch (ApiException e) {
-    System.err.println("Exception when calling CryptoApi#exchangesRead");
-    e.printStackTrace();
-}
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-**List&lt;Object&gt;**
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-<a name="exchangesTickerDataDownload"></a>
-# **exchangesTickerDataDownload**
-> InlineResponse201 exchangesTickerDataDownload(request)
+<a name="cryptoTickerDataDownload"></a>
+# **cryptoTickerDataDownload**
+> OHCLV cryptoTickerDataDownload(body)
 
 Download raw ticker data from major crypto markets
 
@@ -199,12 +152,12 @@ Downloads specified asset class and market and time frame. Of our raw ticker dat
 
 
 CryptoApi apiInstance = new CryptoApi();
-Request1 request = new Request1(); // Request1 | Person to create
+Body7 body = new Body7(); // Body7 | Person to create
 try {
-    InlineResponse201 result = apiInstance.exchangesTickerDataDownload(request);
+    OHCLV result = apiInstance.cryptoTickerDataDownload(body);
     System.out.println(result);
 } catch (ApiException e) {
-    System.err.println("Exception when calling CryptoApi#exchangesTickerDataDownload");
+    System.err.println("Exception when calling CryptoApi#cryptoTickerDataDownload");
     e.printStackTrace();
 }
 ```
@@ -213,11 +166,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**Request1**](Request1.md)| Person to create |
+ **body** | [**Body7**](Body7.md)| Person to create |
 
 ### Return type
 
-[**InlineResponse201**](InlineResponse201.md)
+[**OHCLV**](OHCLV.md)
 
 ### Authorization
 

@@ -1,20 +1,20 @@
 # BlockchainApi
 
-All URIs are relative to *https://brainrexapi.appspot.com:5000/api*
+All URIs are relative to *https://brainrexapi.appspot.com/api*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**blockchainAverageTx**](BlockchainApi.md#blockchainAverageTx) | **POST** /average_tx_fee | Calculate average transccion fee of a given blockchain
-[**blockchainList**](BlockchainApi.md#blockchainList) | **GET** /list_blockchain | The blockchains data structure supported by the Brainrex API
+[**blockchainGetEthereumPrice**](java/docs/BlockchainApi.md#blockchainGetEthereumPrice) | **GET** /get_price_ | Lastest price quote for Ether
+[**blockchainGetEthereumSupply**](java/docs/BlockchainApi.md#blockchainGetEthereumSupply) | **GET** /get_ethereum_supply | Total Supply of Ether
+[**blockchainListBlockchains**](BlockchainApi.md#blockchainListBlockchains) | **GET** /list_blockchain | The blockchains data structure supported by the Brainrex API
 
+<a name="blockchainGetEthereumPrice"></a>
+# **blockchainGetEthereumPrice**
+> String blockchainGetEthereumPrice()
 
-<a name="blockchainAverageTx"></a>
-# **blockchainAverageTx**
-> InlineResponse201 blockchainAverageTx(request)
+Lastest price quote for Ether
 
-Calculate average transccion fee of a given blockchain
-
-Calculates the average trasnsaction fee of a given 
+Latest price being quoted of Ether.
 
 ### Example
 ```java
@@ -24,25 +24,21 @@ Calculates the average trasnsaction fee of a given
 
 
 BlockchainApi apiInstance = new BlockchainApi();
-Request request = new Request(); // Request | Name of the blockchain and date range.
 try {
-    InlineResponse201 result = apiInstance.blockchainAverageTx(request);
+    String result = apiInstance.blockchainGetEthereumPrice();
     System.out.println(result);
 } catch (ApiException e) {
-    System.err.println("Exception when calling BlockchainApi#blockchainAverageTx");
+    System.err.println("Exception when calling BlockchainApi#blockchainGetEthereumPrice");
     e.printStackTrace();
 }
 ```
 
 ### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **request** | [**Request**](Request.md)| Name of the blockchain and date range. |
+This endpoint does not need any parameter.
 
 ### Return type
 
-[**InlineResponse201**](InlineResponse201.md)
+**String**
 
 ### Authorization
 
@@ -50,12 +46,53 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="blockchainList"></a>
-# **blockchainList**
-> List&lt;Object&gt; blockchainList()
+<a name="blockchainGetEthereumSupply"></a>
+# **blockchainGetEthereumSupply**
+> String blockchainGetEthereumSupply()
+
+Total Supply of Ether
+
+Total supply of Ethereum coins that have been mined.
+
+### Example
+```java
+// Import classes:
+//import io.swagger.client.ApiException;
+//import io.swagger.client.api.BlockchainApi;
+
+
+BlockchainApi apiInstance = new BlockchainApi();
+try {
+    String result = apiInstance.blockchainGetEthereumSupply();
+    System.out.println(result);
+} catch (ApiException e) {
+    System.err.println("Exception when calling BlockchainApi#blockchainGetEthereumSupply");
+    e.printStackTrace();
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+**String**
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+<a name="blockchainListBlockchains"></a>
+# **blockchainListBlockchains**
+> List&lt;Object&gt; blockchainListBlockchains()
 
 The blockchains data structure supported by the Brainrex API
 
@@ -70,10 +107,10 @@ List of supported blockchains networks for analysis. The full history of the net
 
 BlockchainApi apiInstance = new BlockchainApi();
 try {
-    List<Object> result = apiInstance.blockchainList();
+    List<Object> result = apiInstance.blockchainListBlockchains();
     System.out.println(result);
 } catch (ApiException e) {
-    System.err.println("Exception when calling BlockchainApi#blockchainList");
+    System.err.println("Exception when calling BlockchainApi#blockchainListBlockchains");
     e.printStackTrace();
 }
 ```
@@ -91,6 +128,5 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
-

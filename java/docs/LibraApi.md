@@ -4,7 +4,7 @@ All URIs are relative to *https://brainrexapi.appspot.com/api*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getLibraStats**](LibraApi.md#getLibraStats) | **GET** /get_libraStats/{byDays} | Info for a specific pet
+[**getLibraStats**](java/docs/LibraApi.md#getLibraStats) | **GET** /get_libraStats/{byDays} | Info for a specific pet
 
 <a name="getLibraStats"></a>
 # **getLibraStats**
@@ -38,7 +38,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**LibraStats**](LibraStats.md)
+[**LibraStats**](java/docs/LibraStats.md)
 
 ### Authorization
 
@@ -48,4 +48,3 @@ No authorization required
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
-

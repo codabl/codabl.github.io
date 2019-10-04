@@ -576,6 +576,7 @@ Put the package under your project folder and add the following in import:
 <!-- tabs:end -->
 
 ## Create Your First App
+After following the installation instructions,
 <!-- tabs:start -->
 
 #### ** Python **
@@ -797,39 +798,7 @@ rescue SwaggerClient::ApiError => e
   puts "Exception when calling BlockchainApi->blockchain_average_tx: #{e}"
 end
 ```
-#### ** Rust **
-# **exchanges_ticker_data_download**
-> ::models::InlineResponse201 exchanges_ticker_data_download(request)
-Download raw ticker data from major crypto markets
-
-Downloads specified asset class and market and time frame. Of our raw ticker data format
-
-### Required Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-  **request** | [**Request1**](Request1.md)| Person to create |
-
-### Return type
-
-[**::models::InlineResponse201**](inline_response_201.md)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-
-
-
-
-
+<!-- tabs:end -->
 
 
 

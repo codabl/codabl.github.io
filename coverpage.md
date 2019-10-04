@@ -1,6 +1,6 @@
-# Brainerx API
-
-> A delightfully simple API for Blockchain [brainrex.com](https://brainrex.com)
+# brainrex for developers
+![logo]("https://s3-eu-west-1.amazonaws.com/brainrex.com/assets/img/brand/brainrex-lower.png")
+> A delightfully simple API to add AI to your stack [brainrex.com](https://brainrex.com)
 
 <!-- - Based on CSS custom properties
 - No packages to install or files to build

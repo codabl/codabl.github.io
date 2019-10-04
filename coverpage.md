@@ -1,6 +1,6 @@
 # Brainerx API
 
-> A delightfully simple theme system for [docsify.js](https://docsify.js.org)
+> A delightfully simple API for Blockchain [brainrex.com](https://brainrex.com)
 
 <!-- - Based on CSS custom properties
 - No packages to install or files to build

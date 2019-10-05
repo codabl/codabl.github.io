@@ -4,7 +4,7 @@
 
 1. [Create a Brainrex API Account](//docsify.js.org/#/quickstart) by following the instructions on the [brainrex.com](//brainrex.com/start.html) website.
 
-2. Log in to the console.brainrex.com website and create a new project.
+  2. Log in to the console.brainrex.com website and create a new project.
 
 ## Install Client Library
 <!-- tabs:start -->
@@ -111,7 +111,7 @@ using IO.Swagger.Client;
 using IO.Swagger.Model;
 ```
 <a name="packaging"></a>
-** Packaging **
+**Packaging**
 
 A `.nuspec` is included with the project. You can follow the Nuget quickstart to [create](https://docs.microsoft.com/en-us/nuget/quickstart/create-and-publish-a-package#create-the-package) and [publish](https://docs.microsoft.com/en-us/nuget/quickstart/create-and-publish-a-package#publish-the-package) packages.
 

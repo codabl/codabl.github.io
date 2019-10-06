@@ -2,7 +2,9 @@
 
 ## Before you begin
 
-1. [Create a Brainrex API Account](//docsify.js.org/#/quickstart) by following the instructions on the [brainrex.com](//brainrex.com/start.html) website.
+To create and configure a Brainrex API project:
+
+  1. [Create a Brainrex API Account](quickstart) by following the instructions on the [brainrex.com](https://brainrex.com/start.html) website.
 
   2. Log in to the console.brainrex.com website and create a new project.
 

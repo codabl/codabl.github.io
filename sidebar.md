@@ -1,5 +1,7 @@
 - [Introduction](introduction)
 - [Your First App](quick-start)
+  -[Quickstarts - Install Client](quick-start/)
+
 <!-- - [How To Guides](howto) -->
 - [API & Full Reference](reference)
   - [Client Libraries](clients)
@@ -16,10 +18,10 @@
     - [Ruby Client](clients/ruby/#)
     - [Rust Client](clients/rust/#)
 
-- [Data Integrations](markdown)
+- [Data Integrations](data)
 - [Changelog](changelog)
 - **Links**
-- [Code](https://icongr.am/feather/code.svg?size=16&color=808080)Node.js Runkit](https://brainrex.com)
+- [Code]Node.js Runkit](https://brainrex.com)
 - [Github](https://github.com/brainrexAPI)
 - [NPM](https://icongram.jgog.in/simple/npm.svg?colored&size=16)NPM](https://www.npmjs.com/package/brainrex-api)
 - [Twitter](https://icongram.jgog.in/simple/twitter.svg?colored&size=16)@jhildenbiddle](http://twitter.com/brainrexAI)

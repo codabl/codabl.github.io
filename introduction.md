@@ -2,6 +2,7 @@
 >It’s simple, we want things like money transfers or receiving a loan to be as inexpensive as sending a text message. We believe money is of public interest and should then be run by the public. The invention of internet and Bitcoin have sparked a technological and social revolution , that's bringing back power to the everyday citizen.
 
 At Brainrex we collect a lot of data and apply technologies such as language understanding, anomaly detection and computer vision to solve some of the biggest problems slowing down the mass adoption of decentralized technologies. e.g fraud, liquidity, theft.
+
 # Welcome to Brainrex for developers
 
 Here you can find quickstarts and how-to guides on how to get started using our API. Now let's talk about our product.
@@ -47,7 +48,7 @@ Here you can find quickstarts and how-to guides on how to get started using our 
   - [Minter](libra#prismjs)
   - [Explorer](libra#explorer)
 
-- **Bitcoin Data**<br>
+- **Bitcoin Data<br>**
   We collect and m
 
   - [RAW ticker data](customization)
@@ -61,27 +62,23 @@ Here you can find quickstarts and how-to guides on how to get started using our 
   We have built a collection of ETL scripts to extract useful stats from blockchain networks you can feed to you models.
   - [Uptated](customization)
   - [Stream](customization#prismjs)
+  - Libra
 
 - **NLP Databases and Corpus**<br>
   We collect and clean public text data from popular message boards, social media sites, RSS channels. Allowing you to build your own datasets
   - AML/KYC Redlists
 
 ## What's Next?
-  - Quickstarts - Guide<br>
-  We will learn how to install client libraries and SDKs in more than 14 popular programming lanaguages we support. 
-    - [Install Client Libraries](quick-start)
+  - **Quickstarts - Install Client Libraries**<br>
+  You will learn how to install client libraries and SDKs in more than 14 popular programming lanaguages we support.
+  - **[Install Client Libraries](quick-start)**
 
-  - Quickstarts - First App<br> Your first API call will be made,
-    - [Build your first App](quickstart#first-app).
+  - **Quickstarts - First App<br>**
+
+    - **[Build your first App](quickstart#first-app)**
 
 
 ## Ask us questions
 - Join telegram group [Telegram](https://t.me/brainrex) in 14 programming lanaguages.
-- Follow [@BrainrexxAI](https://twitter.com/jhildenbiddle) for announcements
+- Follow [@BrainrexxAI](https://twitter.com/brainrexAI) for announcements
 - Add a ⭐️ [star on GitHub](https://github.com/brainrexAPI)
-
-
-Copyright (c) Brainrex Ltd ([Brainerx Ltd](https://brainrex.com))
-
-<!-- GitHub Buttons -->
-<script async defer src="https://buttons.github.io/buttons.js"></script

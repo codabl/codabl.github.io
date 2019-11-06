@@ -15,4 +15,4 @@
 
 <!-- background color -->
 
-![color](#000000)
+![color](#17375f)

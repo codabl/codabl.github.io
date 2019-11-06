@@ -1,16 +1,4 @@
-### Data Integrations
-We provide third-party integrations to popular cloud warehouses, so you can quickly find high quality data
-
-#### Cryptocurrency Data
-
-| Blockchain Name        | Description  |
-| ------------- |:-------------:|
-| Bitcoin    |  |
-| Bitcoin Cash   | centered      |
-| Ethereum | You can adjust the sensitivy of the model       |  
-Partner data
-
-#### Blockchain Data
+## Data Format
 Name	Description	Type Glossary
 date	Timestamp	String (ISO UTC Date)
 dpr	Price (USD)	Decimal128
@@ -42,8 +30,3 @@ qd2	Tx value quintile 2 (USD)	Decimal128
 qd3	Tx value quintile 3 (USD)	Decimal128
 qd4	Tx value quintile 4 (USD)	Decimal128
 qd5	Tx value quintile 5 (USD)	Decimal128
-#### Cloud warehouses
-Amazon Redshift
-Gcloud Bigquery
-
-#### Data Streaming

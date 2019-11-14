@@ -51,9 +51,7 @@ We provide anomaly detection capable of identifying common anomalies in blockcha
   | -----------------|:-------------:|
   | [Sentiment Analysis](language)    | Understand the overall opinion, feeling, or attitude sentiment expressed in a blockf of text. |
   | [Price Sentiment](language)    | Understand the overall opinion, feeling, or attitude sentiment expressed in a blockf of text. |
-
   | Entity Analysis   | Identify entities within documents — including receipts, invoices, and contracts — and label them by types such as date, person, contact information, organization, location, events, products, and media      |
-  | Entity Sentiment  | This endpoint is similar to an entity but calculates the sentiment score for each known entity in the sentence, and the importance
 
 ## **Pricing**
 
@@ -70,7 +68,7 @@ We provide anomaly detection capable of identifying common anomalies in blockcha
 |----------|:--------:|:--------:|:--------:|:--------:|
 | Sentiment  | 5k units     | 100k units   | 1M units     | 100M units   |
 | Entity  | x     | 100k units    | 1M  units   | 100M units  |
-| Investor Sentiment  | x     | 1M units    | 50M units     | 100M units    |
+| Investor Sentiment  | x     | 1M units    | 1M units     | 100M units    |
 | Text Anomalies  | x     | x     | 1M units     | 50M units   |
 
 
@@ -106,7 +104,7 @@ You can manage your teams settings  ![](https://s3-eu-west-1.amazonaws.com/brain
 - Create
 ### Open Source Client libraries<br>
 We maintain versioned libraries for every popular programming language, including SDK for Android and IOS developers. Embedding
-- Python
+- [Python](clients/python/)
 - JavaScript
 - Java
 - R

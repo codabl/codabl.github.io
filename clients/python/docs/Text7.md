@@ -1,9 +1,10 @@
-# Body1
+# Text7
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**filename** | **list[str]** |  | [optional] 
+**text** | **str** | Text to be analyzed | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
 

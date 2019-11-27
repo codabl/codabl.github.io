@@ -11,7 +11,7 @@ We provide natural language understanding software capable of identifying crypto
 
 # Crypto Sentiment - Quickstart
 ## We will learn how to install and use the sentiment API library. For python
-TODO: ADD PICTURE BASED ON SFBW, INVESTORS SENTIMENT QUICKSTART
+<img src="https://s3-eu-west-1.amazonaws.com/brainrex.com/img/products/sentiment-analysis-quickstart-brainrex-api.png">
 Investor Sentiment Analysis
 Audience
 This tutorial is designed to let you quickly start exploring and developing applications with the BrainrexNatural Language API. It is designed

@@ -27,6 +27,9 @@ In order to run this tutorial you need to do the following:
 - Basic familiarity with Python programming.
 - Set up your Python development environment. It is recommended that you have the latest version of Python 3.8.0, pip, and -virtualenv installed on your system.
 
+Tip: You can set your client credentials as environmental variables in Linux bash terminal and Mac OS X terminal using export BRAINREX_API_KEY=your_client_id (similarly for GOOGLE_CLIENT_SECRET).
+
+If you’re on Windows, you can use set GOOGLE_CLIENT_ID=your_client_id in Command Prompt.
 ## Part 1 - Making first API call and authentication
 ### Importing libraries we need for this tutorial.
 

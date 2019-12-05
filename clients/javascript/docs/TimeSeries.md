@@ -1,8 +1,7 @@
-# BrainrexApi.InlineResponse200
+# Brainrex.TimeSeries
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**ename** | **String** |  | [optional] 
 
 

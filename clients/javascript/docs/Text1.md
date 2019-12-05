@@ -1,8 +1,8 @@
-# BrainrexApi.InlineResponse2001
+# Brainrex.Text1
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**currencypair** | **String** |  | [optional] 
+**text** | **String** | Text to be analyzed | [optional] 
 
 

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://developers.brainrex.com/blog</id>
+    <title>BrainRex Blog</title>
+    <updated>2019-11-25T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://developers.brainrex.com/blog"/>
+    <subtitle>BrainRex Blog</subtitle>
+    <icon>https://developers.brainrex.com/img/favicon.ico</icon>
+    <rights>Copyright © 2020 Timber, Inc.</rights>
+    <entry>
+        <title type="html"><![CDATA[Unit Testing Your Vector Config Files]]></title>
+        <id>unit-testing-vector-config-files</id>
+        <link href="https://developers.brainrex.com/blog/unit-testing-vector-config-files"/>
+        <updated>2019-11-25T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Treating your Vector configuration files as code]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Windows Support Is Here!]]></title>
+        <id>windows-support</id>
+        <link href="https://developers.brainrex.com/blog/windows-support"/>
+        <updated>2019-11-21T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Bringing the performance and reliability of Vector to Windows]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ARMv7 & ARM64 Support on Linux]]></title>
+        <id>arm-support-on-linux</id>
+        <link href="https://developers.brainrex.com/blog/arm-support-on-linux"/>
+        <updated>2019-11-19T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[These architectures are widely used in embeded devices & servers]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Introducing Vector]]></title>
+        <id>introducing-vector</id>
+        <link href="https://developers.brainrex.com/blog/introducing-vector"/>
+        <updated>2019-06-28T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Hello World. Bringing Vector to life.]]></summary>
+    </entry>
+</feed>

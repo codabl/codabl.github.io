@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[29],{129:function(n,t,c){"use strict";c.r(t);var e=c(0),o=c.n(e),r=c(336);t.default=function(){return o.a.createElement(r.a,{to:"/docs/about/what-is-vector/"})}},336:function(n,t,c){"use strict";var e=c(17);c.d(t,"a",(function(){return e.c})),c.d(t,"b",(function(){return e.d}))}}]);

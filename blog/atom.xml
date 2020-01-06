@@ -7,7 +7,7 @@
     <link rel="alternate" href="https://developers.brainrex.com/blog"/>
     <subtitle>BrainRex Blog</subtitle>
     <icon>https://developers.brainrex.com/img/favicon.ico</icon>
-    <rights>Copyright © 2020 Timber, Inc.</rights>
+    <rights>Copyright © 2020 BrainRex, Ltd.</rights>
     <entry>
         <title type="html"><![CDATA[Unit Testing Your Vector Config Files]]></title>
         <id>unit-testing-vector-config-files</id>

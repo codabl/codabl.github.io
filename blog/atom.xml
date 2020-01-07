@@ -2,38 +2,31 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://developers.brainrex.com/blog</id>
     <title>BrainRex Blog</title>
-    <updated>2019-11-25T00:00:00.000Z</updated>
+    <updated>2019-11-23T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://developers.brainrex.com/blog"/>
     <subtitle>BrainRex Blog</subtitle>
     <icon>https://developers.brainrex.com/img/favicon.ico</icon>
     <rights>Copyright © 2020 BrainRex, Ltd.</rights>
     <entry>
-        <title type="html"><![CDATA[Unit Testing Your Vector Config Files]]></title>
-        <id>unit-testing-vector-config-files</id>
-        <link href="https://developers.brainrex.com/blog/unit-testing-vector-config-files"/>
-        <updated>2019-11-25T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Treating your Vector configuration files as code]]></summary>
+        <title type="html"><![CDATA[Deploying machine learning models to AWS Lambda, with Connexion, Zappa and Docker]]></title>
+        <id>zappa-lambda-docker</id>
+        <link href="https://developers.brainrex.com/blog/zappa-lambda-docker"/>
+        <updated>2019-11-23T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[We are gonna learn how to easily deploy any Python3 application to AWS lambda without having to change any code or even go into the lambda console. ]]></summary>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Windows Support Is Here!]]></title>
-        <id>windows-support</id>
-        <link href="https://developers.brainrex.com/blog/windows-support"/>
-        <updated>2019-11-21T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Bringing the performance and reliability of Vector to Windows]]></summary>
+        <title type="html"><![CDATA[Brainrex joins Libracamp, a boot camp to build on Facebook’s backed cryptocurrency project]]></title>
+        <id>libracamp-selected</id>
+        <link href="https://developers.brainrex.com/blog/libracamp-selected"/>
+        <updated>2019-10-31T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[After 4 weeks of voting, Brainrex has been selected as one of the 5 teams out of 160 that will be participating in Libracamp, a 2-month online boot camp to accelerate companies building on top of the Libra blockchain testnet.]]></summary>
     </entry>
     <entry>
-        <title type="html"><![CDATA[ARMv7 & ARM64 Support on Linux]]></title>
-        <id>arm-support-on-linux</id>
-        <link href="https://developers.brainrex.com/blog/arm-support-on-linux"/>
-        <updated>2019-11-19T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[These architectures are widely used in embeded devices & servers]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Introducing Vector]]></title>
-        <id>introducing-vector</id>
-        <link href="https://developers.brainrex.com/blog/introducing-vector"/>
-        <updated>2019-06-28T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Hello World. Bringing Vector to life.]]></summary>
+        <title type="html"><![CDATA[Brainrex competing for 150k USD at Battlefield San Francisco Blockchain Week]]></title>
+        <id>sfbw-finalist</id>
+        <link href="https://developers.brainrex.com/blog/sfbw-finalist"/>
+        <updated>2019-10-28T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[We are happy to announce we have been selected as one of the ten finalists at the Blockchain Battlefield...]]></summary>
     </entry>
 </feed>

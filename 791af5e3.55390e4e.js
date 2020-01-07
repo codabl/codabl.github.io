@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[70],{168:function(o){o.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"platform-windows","name":"platform: windows","count":1,"permalink":"/blog/tags/platform-windows"}')}}]);

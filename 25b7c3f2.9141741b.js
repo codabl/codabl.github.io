@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[21],{117:function(n,t,r){"use strict";r.r(t);var e=r(0),u=r.n(e),a=r(259);t.default=function(){return u.a.createElement(a.a,{to:"/docs/about/what-is-brainrex/"})}},259:function(n,t,r){"use strict";var e=r(17);r.d(t,"a",(function(){return e.c})),r.d(t,"b",(function(){return e.d}))}}]);

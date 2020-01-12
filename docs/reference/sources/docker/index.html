@@ -20,7 +20,7 @@
 <link data-react-helmet="true" rel="shortcut icon" href="/img/favicon.ico">
 
 
-<link rel="stylesheet" href="/styles.4ad88201.css">
+<link rel="stylesheet" href="/styles.2960cbd6.css">
 
 </head>
 <body>
@@ -33,31 +33,31 @@ situations if your current user is able to run <code>docker ps</code> then Vecto
 connect. Vector will also respect if <code>DOCKER_HOST</code> and <code>DOCKER_VERIFY_TLS</code> are set. Vector will also
 use the other default docker environment variables if they are set. See the <a href="https://docs.docker.com/engine/reference/commandline/dockerd/#daemon-socket-option">Docker daemon docs</a>.</p><h3><a aria-hidden="true" tabindex="-1" class="anchor" id="environment-variables"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#environment-variables" title="Direct link to heading">#</a>Environment Variables</h3><p>Environment variables are supported through all of Vector&#x27;s configuration.
 Simply add <code>${MY_ENV_VAR}</code> in your Vector configuration file and the variable
-will be replaced before being evaluated.</p><p>You can learn more in the <a href="/docs/setup/configuration/#environment-variables">Environment Variables</a>
+will be replaced before being evaluated.</p><p>You can learn more in the <a href="/docs/quickstarts/configuration/#environment-variables">Environment Variables</a>
 section.</p></div></article></div><div class="paginator_3VDt"><nav class="pagination-nav"><div class="pagination-nav__item"></div><div class="pagination-nav__item pagination-nav__item--next"></div></nav></div></div><div class="col col--3"><div class="table-of-contents"><div class="section"><div class="title">Support</div><div><a class="text--warning" title="This component is in beta and is not recommended for production environments. Click to learn more." href="/docs/about/guarantees/#beta"><i class="feather icon-alert-triangle"></i> beta</a></div><div><a class="text--warning" title="This component makes a best-effort delivery guarantee, and in rare cases can lose data. Click to learn more." href="/docs/about/guarantees/#best-effort"><i class="feather icon-shield-off"></i> best-effort</a></div><div><a title="This component works on the linux, macos, windows operating systems." href="/docs/setup/installation/operating-systems/"><i class="feather icon-cpu"></i> <span class="text--primary">linux</span>, <span class="text--primary">macos</span>, <span class="text--primary">windows</span></a></div></div><div class="section"><div class="title">Contents</div><ul class="contents"><li><a href="#configuration" class="contents__link">Configuration</a></li><li><a href="#options" class="contents__link">Options</a><ul><li><a href="#include_containers" class="contents__link">include_containers</a></li><li><a href="#include_labels" class="contents__link">include_labels</a></li></ul></li><li><a href="#env-vars" class="contents__link">Env Vars</a><ul><li><a href="#docker_host" class="contents__link">DOCKER_HOST</a></li><li><a href="#docker_verify_tls" class="contents__link">DOCKER_VERIFY_TLS</a></li></ul></li><li><a href="#output" class="contents__link">Output</a><ul><li><a href="#label-key" class="contents__link"><code>[label-key]</code></a></li><li><a href="#container_created_at" class="contents__link">container_created_at</a></li><li><a href="#container_id" class="contents__link">container_id</a></li><li><a href="#container_name" class="contents__link">container_name</a></li><li><a href="#image" class="contents__link">image</a></li><li><a href="#message" class="contents__link">message</a></li><li><a href="#stream" class="contents__link">stream</a></li><li><a href="#timestamp" class="contents__link">timestamp</a></li></ul></li><li><a href="#how-it-works" class="contents__link">How It Works</a><ul><li><a href="#connecting-to-the-docker-daemon" class="contents__link">Connecting to the Docker daemon</a></li><li><a href="#environment-variables" class="contents__link">Environment Variables</a></li></ul></li></ul></div><div class="section"><div class="title">Resources</div><ul class="contents"><li><a href="https://github.com/brainrexapi/brainrexapi.github.io/edit/master/docs/reference/sources/docker.md" class="contents__link" target="_blank"><i class="feather icon-edit-1"></i> Edit this page</a></li><li><a href="https://github.com/timberio/vector/issues?q=is%3Aopen+is%3Aissue+label%3A%22source%3A+docker%22" class="contents__link" target="_blank"><i class="feather icon-message-circle"></i> View Issues</a></li><li><a href="https://github.com/timberio/vector/tree/master/src/sources/docker.rs" class="contents__link" target="_blank"><i class="feather icon-github"></i> View Source</a></li></ul></div></div></div></div></div></div></div></main></div></div><footer class="footer"><div class="container"><div class="row footer__links"><div class="col col--5 footer__col"><div class="margin-bottom--md"></div><div class="margin-bottom--md"><div class="mailing-list"><form action="https://formspree.io/xqkevzld" method="post" class="mailing-list--form"><input type="email" class="input input--undefined" name="email" placeholder="you@email.com" style="width:150px"><button class="button button--primary button--undefined" type="submit">Subscribe</button></form></div></div><div><a href="https://twitter.com/brainrexAPI" target="_blank"><i class="feather icon-twitter" alt="BrainRex&#x27;s Twitter"></i></a>    <a href="https://t.me/brainrex" target="_blank"><i class="feather icon-message-circle" alt="Telegram Chat"></i></a>    <a href="https://github.com/brainrexAPI" target="_blank"><i class="feather icon-github" alt="Brainrex&#x27;s Github Repo"></i></a>    <a href="https://medium.com/brainrex" target="_blank"><i class="feather icon-rss" alt="BrainRex&#x27;s Medium feed"></i></a></div></div><div class="col footer__col"><h4 class="footer__title">About</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" href="/docs/about/what-is-brainrex/">What is BrainRex?</a></li><li class="footer__item"><a class="footer__link-item" href="/community/#team">The Team</a></li><li class="footer__item"><a class="footer__link-item" href="/contact/">Contact Us</a></li><li class="footer__item"><a class="footer__link-item" href="/press/">Press</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">Products</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" href="/docs/features/anomaly-detection/">Anomaly</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/features/language-understanding/">Language</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/features/integrations/">Integrations</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/features/pro-features/">Pro Features</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">Documentation</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" href="/docs/setup/create/">Create Account</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/setup/quickstart-client-libraries/">Quickstarts</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/tutorials/">Tutorials</a></li><li class="footer__item"><a aria-current="page" class="footer__link-item active" href="/docs/reference/">Reference</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">Community</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" to="https://t.me/brainrex" href="https://t.me/brainrex">Telegram</a></li><li class="footer__item"><a class="footer__link-item" to="https://github.com/brainrexAPI" href="https://github.com/brainrexAPI">Github</a></li><li class="footer__item"><a class="footer__link-item" to="https://twitter.com/brainrexAI" href="https://twitter.com/brainrexAI">Twitter</a></li><li class="footer__item"><a class="footer__link-item" to="https://www.linkedin.com/company/brainrex/" href="https://www.linkedin.com/company/brainrex/">Linkedin</a></li><li class="footer__item"><a class="footer__link-item" href="/blog/">Blog</a></li></ul></div></div><div class="text--center"><div class="margin-bottom--sm"><a href="https://brainrex.com/" target="_blank" rel="noopener noreferrer" class="footerLogoLink_3L_r"></a></div>Copyright © 2020 BrainRex, Ltd.</div></div></footer>
 </div>
 
-<script src="/styles.b3e93112.js"></script>
+<script src="/styles.a61c04b3.js"></script>
 
-<script src="/runtime~main.48bc4de7.js"></script>
+<script src="/runtime~main.d5756b81.js"></script>
 
-<script src="/main.4406b409.js"></script>
+<script src="/main.387df6a9.js"></script>
 
-<script src="/1.e8b564b7.js"></script>
+<script src="/1.57fd5b6a.js"></script>
 
-<script src="/2.9974340a.js"></script>
+<script src="/2.5cdd40f5.js"></script>
 
-<script src="/3.dd86e0c2.js"></script>
+<script src="/3.d0a2bbc8.js"></script>
 
-<script src="/1be78505.ee82a89c.js"></script>
+<script src="/1be78505.0a1183e2.js"></script>
 
-<script src="/20ac7829.664f5a35.js"></script>
+<script src="/20ac7829.01633d27.js"></script>
 
-<script src="/17896441.47136163.js"></script>
+<script src="/17896441.69e35920.js"></script>
 
-<script src="/4.e0493d85.js"></script>
+<script src="/4.7db8fb58.js"></script>
 
-<script src="/d5f41028.1c87bf49.js"></script>
+<script src="/d5f41028.851d584b.js"></script>
 
 
 </body>

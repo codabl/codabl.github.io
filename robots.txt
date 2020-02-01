@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: brainrex.com/sitemap.xml

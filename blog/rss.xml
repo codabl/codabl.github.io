@@ -4,10 +4,16 @@
         <title>BrainRex Blog</title>
         <link>https://brainrex.com/blog</link>
         <description>BrainRex Blog</description>
-        <lastBuildDate>Sat, 23 Nov 2019 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 04 Feb 2020 00:00:00 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <copyright>Copyright © 2020 Brainrex, Ltd.</copyright>
+        <item>
+            <title><![CDATA[anomaly-detection-basics]]></title>
+            <link>https://brainrex.com/blog/2020/02/04/anomaly-detection-basics</link>
+            <guid>https://brainrex.com/blog/2020/02/04/anomaly-detection-basics</guid>
+            <pubDate>Tue, 04 Feb 2020 00:00:00 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[Deploying machine learning models to AWS Lambda, with Connexion, Zappa and Docker]]></title>
             <link>https://brainrex.com/blog/zappa-lambda-docker</link>

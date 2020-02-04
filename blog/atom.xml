@@ -2,12 +2,18 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://brainrex.com/blog</id>
     <title>BrainRex Blog</title>
-    <updated>2019-11-23T00:00:00.000Z</updated>
+    <updated>2020-02-04T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://brainrex.com/blog"/>
     <subtitle>BrainRex Blog</subtitle>
     <icon>https://brainrex.com/img/favicon.ico</icon>
     <rights>Copyright © 2020 Brainrex, Ltd.</rights>
+    <entry>
+        <title type="html"><![CDATA[anomaly-detection-basics]]></title>
+        <id>anomaly-detection-basics</id>
+        <link href="https://brainrex.com/blog/2020/02/04/anomaly-detection-basics"/>
+        <updated>2020-02-04T00:00:00.000Z</updated>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Deploying machine learning models to AWS Lambda, with Connexion, Zappa and Docker]]></title>
         <id>zappa-lambda-docker</id>

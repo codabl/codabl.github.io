@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0">
     <channel>
-        <title>BrainRex Blog</title>
-        <link>https://brainrex.com/blog</link>
-        <description>BrainRex Blog</description>
+        <title>Codabl Blog</title>
+        <link>https://codabl.com/blog</link>
+        <description>Codabl Blog</description>
         <lastBuildDate>Sat, 23 Nov 2019 00:00:00 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <copyright>Copyright © 2020 Codabl, Inc.</copyright>
         <item>
             <title><![CDATA[Deploying machine learning models to AWS Lambda, with Connexion, Zappa and Docker]]></title>
-            <link>https://brainrex.com/blog/zappa-lambda-docker</link>
-            <guid>https://brainrex.com/blog/zappa-lambda-docker</guid>
+            <link>https://codabl.com/blog/zappa-lambda-docker</link>
+            <guid>https://codabl.com/blog/zappa-lambda-docker</guid>
             <pubDate>Sat, 23 Nov 2019 00:00:00 GMT</pubDate>
             <description><![CDATA[We are gonna learn how to easily deploy any Python3 application to AWS lambda without having to change any code or even go into the lambda console. ]]></description>
         </item>
         <item>
             <title><![CDATA[Brainrex joins Libracamp, a boot camp to build on Facebook’s backed cryptocurrency project]]></title>
-            <link>https://brainrex.com/blog/libracamp-selected</link>
-            <guid>https://brainrex.com/blog/libracamp-selected</guid>
+            <link>https://codabl.com/blog/libracamp-selected</link>
+            <guid>https://codabl.com/blog/libracamp-selected</guid>
             <pubDate>Thu, 31 Oct 2019 00:00:00 GMT</pubDate>
             <description><![CDATA[After 4 weeks of voting, Brainrex has been selected as one of the 5 teams out of 160 that will be participating in Libracamp, a 2-month online boot camp to accelerate companies building on top of the Libra blockchain testnet.]]></description>
         </item>
         <item>
             <title><![CDATA[Brainrex competing for 150k USD at Battlefield San Francisco Blockchain Week]]></title>
-            <link>https://brainrex.com/blog/sfbw-finalist</link>
-            <guid>https://brainrex.com/blog/sfbw-finalist</guid>
+            <link>https://codabl.com/blog/sfbw-finalist</link>
+            <guid>https://codabl.com/blog/sfbw-finalist</guid>
             <pubDate>Mon, 28 Oct 2019 00:00:00 GMT</pubDate>
             <description><![CDATA[We are happy to announce we have been selected as one of the ten finalists at the Blockchain Battlefield...]]></description>
         </item>

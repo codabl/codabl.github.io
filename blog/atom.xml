@@ -7,7 +7,7 @@
     <link rel="alternate" href="https://brainrex.com/blog"/>
     <subtitle>BrainRex Blog</subtitle>
     <icon>https://brainrex.com/img/favicon.ico</icon>
-    <rights>Copyright © 2020 Brainrex, Ltd.</rights>
+    <rights>Copyright © 2020 Codabl, Inc.</rights>
     <entry>
         <title type="html"><![CDATA[Deploying machine learning models to AWS Lambda, with Connexion, Zappa and Docker]]></title>
         <id>zappa-lambda-docker</id>

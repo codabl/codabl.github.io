@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[62],{163:function(n,t,e){"use strict";e.r(t);var r=e(0),a=e.n(r),o=e(216);t.default=function(){return a.a.createElement(o.a,{to:"/releases/latest/download/"})}},216:function(n,t,e){"use strict";var r=e(17);e.d(t,"a",(function(){return r.c})),e.d(t,"b",(function(){return r.d}))}}]);

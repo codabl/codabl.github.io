@@ -3,7 +3,7 @@ const path = require('path');
 module.exports = {
   title: 'Codabl',
   tagline: 'A lightweight and ultra-fast tool for building observability pipelines',
-  url: 'https://codabl.com',
+  url: 'https://codabl.github.io',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
   organizationName: 'codabl',
@@ -18,7 +18,7 @@ module.exports = {
         alt: 'Codabl',
         src: 'img/logo-dark.svg'
       },
-      links: [
+      items: [
         {to: 'components/', label: 'Components', position: 'left'},
         {to: 'guides/', label: 'Guides', position: 'left'},
         {to: 'docs/', label: 'Docs', position: 'left'},

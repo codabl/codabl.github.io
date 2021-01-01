@@ -1,4 +1,5 @@
-
+node_modules/
 docs/.DS_Store
 blog/.DS_Store
 .DS_Store
+node_modules

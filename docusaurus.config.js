@@ -29,7 +29,7 @@ module.exports = {
         {href: 'https://github.com/codabl', label: "GitHub", position: 'right'},
       ],
     },
-    image: 'img/open-graph.png',
+    image: 'img/codabl-open-graph.png',
     prism: {
       theme: require('prism-react-renderer/themes/github'),
       darkTheme: require('prism-react-renderer/themes/dracula'),
